@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="display-1">Stupid Coaching</h1>
+
+    <figure class="bg-light p-3 rounded" style="border-left: .50rem solid gray;">
+        <blockquote class="blockquote">
+            <p>
+                <%= params[:question] %>
+            </p>
+        </blockquote>
+        <figcaption class="blockquote-footer">You</figcaption>
+    </figure>
+
+    <figure class="bg-light p-3 rounded" style="border-left: .50rem solid gray;">
+        <blockquote class="blockquote">
+            <p><%= @answer %></p>
+        </blockquote>
+        <figcaption class="blockquote-footer">Your coach</figcaption>
+    </figure>
+
+    <%= link_to "Ask a new question", '/ask' %>
+
+</div>
